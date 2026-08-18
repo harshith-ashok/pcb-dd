@@ -1,2 +1,14 @@
 .venv/
 working/
+runs/
+
+# model weights / exports - large binaries, don't belong in git history
+*.pt
+*.onnx
+
+# archives produced by the notebook's export/zip cells
+*.zip
+*.7z
+
+.ipynb_checkpoints/
+__pycache__/
