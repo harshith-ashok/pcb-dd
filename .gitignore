@@ -15,9 +15,6 @@ runs/
 !working/deploy/*.pt
 !working/deploy/*.onnx
 
-# archives produced by the notebook's export/zip cells
-*.zip
-*.7z
 
 .ipynb_checkpoints/
 __pycache__/
