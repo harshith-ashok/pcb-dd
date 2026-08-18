@@ -1,0 +1,2 @@
+working/deploy/*.pt filter=lfs diff=lfs merge=lfs -text
+working/deploy/*.onnx filter=lfs diff=lfs merge=lfs -text

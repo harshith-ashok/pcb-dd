@@ -1,10 +1,19 @@
 .venv/
-working/
+
+# training data prep / intermediate outputs - regenerate via train.ipynb.
+# working/deploy/ is the exception: it's the final exported model bundle.
+working/*
+!working/deploy/
+
+# full training run artifacts (checkpoints for every fold/epoch) - too large for git
 runs/
 
-# model weights / exports - large binaries, don't belong in git history
+# model weights / exports - large binaries in general; the final deploy
+# bundle in working/deploy/ is tracked via Git LFS instead (see .gitattributes)
 *.pt
 *.onnx
+!working/deploy/*.pt
+!working/deploy/*.onnx
 
 # archives produced by the notebook's export/zip cells
 *.zip
