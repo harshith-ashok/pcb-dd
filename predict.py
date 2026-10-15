@@ -1,15 +1,3 @@
-"""
-Standalone PCB defect detector inference.
-On the target machine: pip install ultralytics onnxruntime
-(ultralytics loads either best.pt or best.onnx and handles
-pre/post-processing + NMS for you - no training code needed.)
-
-Runs on CPU by default so it works on any machine regardless of
-GPU/CUDA setup. If the target machine has a matching CUDA + cuDNN
-install, change DEVICE below to 0 for GPU inference.
-
-Usage: python predict.py path/to/image.jpg
-"""
 import sys
 from ultralytics import YOLO
 
